@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+    body {
+        font-family: 'Montserrat', sans-serif !important;
+    }
+
+    header {
+        margin-top: 40px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>O que é HTTP?</title>
+</head>
+
+<body class="container">
+    <div style="padding: 2%;" class="col-lg-5 col-sm-12 mx-auto">
+        <button href="#http" id="btn-http" type="button" class="col-5 btn btn-outline-light text-dark">HTTP</button>
+        <button href="#api" id="btn-api" type="button" class=" col-5 btn btn-outline-light text-dark">API'S</button>
+    </div>
+
+    <div class="http" id="http-cont">
+        <header class="col-lg-12">
+            <h1 class="col-lg-6 mx-auto">O que é e pra que serve o protocolo HTTP?</h1>
+        </header>
+
+
+        <div style="width: 100%; padding-top: 5%;">
+            <img class="col-lg-12 mx-auto"
+                src="https://d3v4jsc54141g1.cloudfront.net/uploads/reward_image/image/270010/http-min-e1518718001273-1525632011.jpg"
+                alt="">
+        </div>
+
+        <div style="padding: 1.5%; padding-top: 5%;">
+
+            <p style="text-align:justify;font-size: 13pt;">
+                HTTP é um protocolo de rede de visualização de conteúdos na internet. É este protocolo que faz a conexão
+                entre o servidor que hospeda os dados dos conteúdos e o navegador que o usuário tem instalado no
+                computador.
+                Quando um usuário faz um pedido de acesso
+                a uma página, o protocolo HTTP é acionado, pegando os dados da página requisitada diretamente no
+                servidor.
+                Na sequência, ele exibe todas essas informações através de um navegador. É assim que o usuário vê e
+                interage
+                com conteúdos carregados
+                em páginas de internet.
+            </p>
+            <h2 class="col-lg-12 mx-auto" style="padding: 5%;">Componentes de sistemas baseados em HTTP</h2>
+            <div class="row col-lg-12 mx-auto">
+
+                <p class="col-lg-5 mx-auto" style="text-align:justify;font-size: 13pt;">
+                    O HTTP é um protocolo cliente-servidor: as requisições são enviados por uma entidade, o
+                    agente-usuário
+                    (ou um proxy em nome dele). A maior parte do tempo, o agente-usuário é um navegador da Web, mas pode
+                    ser
+                    qualquer coisa, como por exemplo um robô que
+                    rastreia a Web para preencher e manter um índice de mecanismo de pesquisa. O navegador é sempre a
+                    entidade que inicia as requisições. Nunca é o servidor (embora alguns
+                    mecanismos tenham sido adicionados ao longo dos anos para simular mensagens iniciadas pelo
+                    servidor).
+                </p>
+                <p class="col-lg-5 mx-auto" style="text-align:justify;font-size: 13pt;">
+                    Na realidade, existem muitos outros computadores entre o navegador e o servidor que está tratando a
+                    requisição: existem roteadores, modems e muito mais. Graças ao modelo de camadas da Web (layers),
+                    essas funcionalidades estão escondidas nas camadas de rede e transporte, respectivamente. O HTTP
+                    está no topo da camada de aplicação. Apesar de ser importante diagnosticar problemas de
+                    conectividade, os layers abaixo da camada de aplicação são
+                    irrelevantes para a descrição do HTTP.
+                </p>
+                <div style="width: 100%;">
+                    <img class="col-lg-12 mx-auto"
+                        src="https://mdn.mozillademos.org/files/13679/Client-server-chain.png" alt="">
+                </div>
+            </div>
+            <p style="text-align:justify;font-size: 13pt; padding-top: 5%;">
+                Para mostrar uma página Web, o navegador envia uma requisição para buscar o documento HTML da página.
+                Ele então realiza uma análise sintática desse arquivo, buscando requisições adicionais correspondentes a
+                scripts de execução, informações de layout (CSS) para apresentação e subrecursos contidos na página
+                (geralmente imagens e vídeos). Depois o navegador interpreta esses recursos para mostrar ao usuário o
+                documento completo, a página Web.
+            </p>
+            <div style="width: 100%; padding-top: 5%;">
+                <img class="col-lg-12 mx-auto" src="https://j.gifs.com/ROKx20.gif" alt="">
+            </div>
+        </div>
+        <h2 class="col-lg-12 mx-auto" style="padding-top: 5%;">Conclusão</h2>
+        <p style="text-align:justify;font-size: 13pt; padding-top: 5%;">
+            O HTTP é um protocolo extensível que é fácil de se usar. A arquitetura cliente-servidor, combinada com a
+            habilidade de simplesmente adicionar cabeçalhos, permite que o HTTP avance suas funcionalidades juntamente
+            com a elasticidade da Web. Embora o HTTP/2.0 adicione mais complexidade, embutindo mensagens HTTP em quadros
+            para melhorar a performance, a estrutura básica das mensagens continua a mesma desde o HTTP/1.0. Fluxo de
+            sessões permanece simples, permitindo-o a ser investigado, e depurado com um simples monitor de mensagens
+            HTTP.
+        </p>
+    </div>
+
+
+    <div class="api" id="api-cont" style="display: none;">
+        <header class="col-lg-12">
+            <h1 class="col-lg-6 mx-auto">API'S</h1>
+        </header>
+    </div>
+
+
+    <hr style="padding-top: 2%;" width=“ 2” size=“ 100”>
+    <footer>
+        <p class="col-lg-12" style="text-align: center;">
+            Ítalo Gomes - TSI 2019
+        </p>
+    </footer>
+</body>
+
+</html>
+<script>
+
+    var conteudohttp = document.getElementById("btn-http");
+    conteudohttp.onclick = function () {
+
+        document.getElementById("btn-http").classList.add("active");
+        document.getElementById("btn-api").classList.remove("active");
+
+        var menu1 = document.getElementById("http-cont");
+        menu1.style.display = "block";
+        var menu2 = document.getElementById("api-cont");
+        menu2.style.display = "none";
+    }
+
+    var conteudoapi = document.getElementById("btn-api");
+    conteudoapi.onclick = function () {
+
+        document.getElementById("btn-api").classList.add("active");
+        document.getElementById("btn-http").classList.remove("active");
+
+        var menu1 = document.getElementById("http-cont");
+        menu1.style.display = "none";
+        var menu2 = document.getElementById("api-cont");
+        menu2.style.display = "block";
+    }
+
+</script>
